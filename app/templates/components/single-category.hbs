@@ -15,11 +15,11 @@
     {{#link-to 'listing' listing.id}}
       <h4>{{listing.title}}</h4>
     {{/link-to}}
-      <p>{{listing.date}}  {{listing.price}}</p>
+      <p>{{listing.date}}  ${{listing.price}}</p>
         </div>
         <div class="col-md-3">
           {{edit-listing listing=listing category=model updateListing="updateListing"}}
-          {{delete-listing listing=listing category=model deleteListing="deleteListing"}}
+          {{delete-listing listing=listing category=model removeListing="removeListing"}}
         </div>
     </div>
   {{/each}}

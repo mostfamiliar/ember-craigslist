@@ -13,10 +13,22 @@ export default Ember.Route.extend({
       newListing.save().then(function(){
         return category.save();
       });
-      this.transitionTo('single-category');
+      this.transitionTo('category');
     },
-    updateListing(params) {
-      console.log(params);
+    // updateListing(listing, params) {
+    //   console.log(params);
+    //   Object.keys(params).forEach(function(key){
+    //     if(params[key]!==undefined) {
+    //       listing.set(key,params[key]);
+    //     }
+    //   });
+    //   listing.save();
+    //   this.transitionTo('category');
+    // },
+    deleteListing(listing) {
+        console.log(listing);
+      listing.destroyRecord();
+      this.transitionTo('category');
     }
   }
 });

@@ -8,18 +8,10 @@ export default Ember.Component.extend({
   }),
   actions: {
     updateListing(listing, params) {
-      console.log(params);
-      Object.keys(params).forEach(function(key){
-        if(params[key]!==undefined) {
-          listing.set(key,params[key]);
-        }
-      });
-      listing.save();
-      this.transitionTo('single-category');
+      this.sendAction('saveListing', listing, params);
     },
-    deleteListing(listing) {
-      listing.destroyRecord();
-      this.transitionTo('single-category');
+    removeListing(listing) {
+        listing.destroyRecord();
+      }
     }
-  }
 });

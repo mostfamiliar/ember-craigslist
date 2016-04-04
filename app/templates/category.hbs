@@ -1,7 +1,8 @@
-{{model.name}}//
-{{single-category category=model}}
-{{new-listing saveListing="saveListing" category=model}}
+<div class="col-md-6">
+  <h1>{{model.name}} ///</h1>
+  {{single-category category=model}}
+</div>
 
-{{#each model.listings as |listing|}}
-{{#link-to 'listing' listing.id}}{{listing.title}}{{listing.date}}{{/link-to}}
-{{/each}}
+<div class="col-md-6">
+  {{new-listing saveListing="saveListing" category=model}}
+</div>

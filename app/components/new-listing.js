@@ -11,6 +11,8 @@ export default Ember.Component.extend({
         title: this.get('title'),
         location: this.get('location'),
         date: this.get('date'),
+        email: this.get('email'),
+        price: this.get('price'),
         description: this.get('description'),
         image: this.get('image'),
         category: this.get('category')

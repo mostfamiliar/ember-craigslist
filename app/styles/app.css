@@ -8,6 +8,10 @@
   opacity: 0.9;
 }
 
+.sort-listing{
+  padding-bottom: 20px;
+}
+
 #title {
   font-size: 95px;
   color: #000;
@@ -37,10 +41,15 @@ h1 {
 }
 
 .category-list {
-  padding-left: 10px;
+  padding-top: 5px;
+  padding-left: 20px;
 }
 
 .glyphicon-pencil {
   font-size: 18px;
   padding-right: 5px;
+}
+
+ul {
+  list-style-type: none;
 }

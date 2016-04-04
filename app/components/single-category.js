@@ -16,6 +16,10 @@ export default Ember.Component.extend({
       });
       listing.save();
       this.transitionTo('single-category');
+    },
+    deleteListing(listing) {
+      listing.destroyRecord();
+      this.transitionTo('single-category');
     }
   }
 });

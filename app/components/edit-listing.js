@@ -18,9 +18,10 @@ export default Ember.Component.extend({
           image: this.get('image'),
           category: this.get('category')
         };
-
-        this.sendAction('updateListing', listing, params);
+        
         this.set('editListingForm', false);
+        this.sendAction('updateListing', listing, params);
+
       }
     }
 });

@@ -1,5 +1,5 @@
-{{#if addNewListing}}
-<h1>New Listing</h1>
+{{#if editListingForm}}
+<h1>Edit Listing</h1>
   <div>
     <form>
       <div class="form-group">
@@ -37,10 +37,10 @@
         {{input value=image id="image"}}
       </div>
 
-      <button {{action 'saveListing'}}>Save</button>
+      <button {{action 'saveListing' listing}}>Save</button>
     </form>
   </div>
 {{else}}
-  <button class="btn btn-default" {{action 'listingFormShow'}}>New Listing</button>
+  <a><span class="glyphicon glyphicon-pencil" aria-hidden="true" {{action 'listingFormShow' on="click"}}></span></a>
 
 {{/if}}

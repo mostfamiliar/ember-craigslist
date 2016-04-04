@@ -14,6 +14,9 @@ export default Ember.Route.extend({
         return category.save();
       });
       this.transitionTo('single-category');
+    },
+    updateListing(params) {
+      console.log(params);
     }
   }
 });

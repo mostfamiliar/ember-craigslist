@@ -5,5 +5,17 @@ export default Ember.Component.extend({
   sortBy: 'date',
   sortDefinition: Ember.computed('sortBy', function(){
     return [ this.get('sortBy') ];
-  })
+  }),
+  actions: {
+    updateListing(listing, params) {
+      console.log(params);
+      Object.keys(params).forEach(function(key){
+        if(params[key]!==undefined) {
+          listing.set(key,params[key]);
+        }
+      });
+      listing.save();
+      this.transitionTo('single-category');
+    }
+  }
 });

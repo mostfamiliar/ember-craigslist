@@ -1,3 +1,46 @@
 .icon {
   width: 100px;
 }
+
+.jumbotron {
+  background-image: url("../assets/punker-bw.jpeg");
+  height: 200px;
+  opacity: 0.9;
+}
+
+#title {
+  font-size: 95px;
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 a {
+    color: #0099cc;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+
+.category-listing {
+  padding-left: 10px;
+}
+
+.new-listing {
+  margin-top: 20px;
+}
+
+.btn-default {
+  background-color: #EEA800;
+  color: #FFF;
+}
+
+.category-list {
+  padding-left: 10px;
+}
+
+.glyphicon-pencil {
+  font-size: 18px;
+  padding-right: 5px;
+}

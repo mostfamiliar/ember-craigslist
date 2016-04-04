@@ -13,6 +13,7 @@ export default Ember.Component.extend({
         date: this.get('date'),
         description: this.get('description'),
         image: this.get('image'),
+        category: this.get('category')
       };
       this.sendAction('saveListing', params);
       this.set('addNewListing', false);

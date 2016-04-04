@@ -1,6 +1,7 @@
 { "categories": [{
     "name": "Instruments",
-    "city": "Portland"
+    "city": "Portland",
+    "listings": null
   },
   {
       "name": "Rack Gear",

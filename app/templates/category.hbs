@@ -1,3 +1,7 @@
-{{model.name}}{{model.city}}
+{{model.name}}//
 {{single-category category=model}}
-{{new-listing saveListing="saveListing"}}
+{{new-listing saveListing="saveListing" category=model}}
+
+{{#each model.listings as |listing|}}
+{{listing.title}}
+{{/each}}
